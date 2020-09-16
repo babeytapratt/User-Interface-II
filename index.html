@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Brian Abeyta-Pratt's page</title>
+    <link href = "C:\Users\Brian Abeyta-Pratt\lambdaSchoolProjects\User-Interface-II\style\index.css" rel = "stylesheet" type = "text/css">
 </head>
-
 <body>
+
 <header>
     <h1>Brian Abeyta-Pratt</h1>
     <nav>
-       <a class="home"href="#">Home</a>
-       <a class="about"href="about.html">About</a>
-       <a class="contact"href="contact.html">Contact</a>
+       <a class="home"href="#home">Home</a>
+       <a class="about"href="#about.html">About</a>
+       <a class="contact-me"href="contact.html">Contact</a>
        <a class="projects"href="#projects.html">Projects</a>
     </nav>
 </header>
@@ -20,47 +22,60 @@
 <section id="about">
     <div class="myInfoContainer">
         <div class="myPicture">
-            <img src="https://photos.google.com/photo/AF1QipMlooC4pM-7RCA11NRQK1KGqFpjOSXv9cHzy0QB" alt="Picture of Brian">
+            <img src="style/img/Picture of me.jpg" alt="Picture of Brian">
         </div>
         <div class="textContainer">
             <h2>Brian Abeyta-Pratt</h2>
-            <a href="projects.html">My Projects</a>
+            <a class="myProjects"href="#projects.html">My Projects</a>
             <p>I recieved my masters degree from Keller Graduate School of Management. After graduating, I was not able to find a job in the field where I recieved my educating because I have no experience. No one will hire an unexperienced database administrator. I started Lambda School to gain invaluable experience as a coder in the real working world. This week I have coded more that I coded my entire life!</p>
         </div>
     </div>
 </section>
 
 <section id="projects">
-    <div class="projectPictures">
-        <img src="project 1.jpg" alt="Yosemite Park">
-        <img src="project 2.jpg" alt="Sweet Eats Bakery">
-        <img src="project 3.jpg" alt="Learning How to Code">
-        <img src="project 4.jpg" alt="Flex-box Exercise">
+    <div class="yosemite-park-container">
+        <img src="style/img/Project 1.jpg" class = "YosemitePark" alt="Yosemite Park">
         <h3>Yosemite Park Website</h3>
+    </div>
+    <div class="sweet-eats-bakery-container">
+        <img src="style/img/Project 2.jpg" class = "SweetEatsBakery" alt="Sweet Eats Bakery">
         <h3>Sweet Eats Bakery Website</h3>
+    </div>
+    <div class="learning-how-to-code-container">
+        <img src="style/img/Project 3.jpg" class = "LearningHowToCode" alt="Learning How to Code">
         <h3>Learning How to Code Website</h3>
+    </div>
+    <div class="flex-box-exercise-container">
+        <img src="style/img/Project 4.jpg" class = "FlexBoxExercise" alt="Flex-box Exercise">
         <h3>Flex-box Exercise Website</h3>
     </div>
-    <div class="funPictures">
-        <img src="https://photos.google.com/photo/AF1QipM9pbp1VmXzxSV491f77eNb6BwQMcO46297RT8P" alt="meercat">
-        <img src="https://photos.google.com/photo/AF1QipPD8y_sLvd_njnQcW6UOewrnYFOenfxnZSpHhdq" alt="PennyPup">
-        <img src="https://photos.google.com/photo/AF1QipMHrZax-Mk6qMkTkAE2RkgDSuvFH-sbrv1KG4wo" alt="Debbie">
-        <img src="https://photos.google.com/photo/AF1QipPNmfZt2sBo7OL5K42rHKAmBisJScARQXWCX_7M" alt="Emma">
+</section>
+
+<section id="funPictures">
+    <div class="meerkat-container">
+        <img src="style/img/MeerKat.jpg" class = "meerKat" alt="meerkat">
         <h3>A meercat at the Cheyenne Mountain Zoo</h3>
-        <h3>My dog named Penny!</h3>
-        <h3>My lovely wife!</h3>
-        <h3>My daughter Emma!</h3>
+    </div>
+    <div class="cheyenne-mountain-zoo-container">
+        <img src="style/img/Cheyenne Mountain Zoo.jpg" class = "CheyenneMountainZoo" alt="Cheyenne Mountain Zoo">
+        <h3>My kids and I at the Cheyenne Mountain Zoo</h3>
+    </div>
+    <div class="debbie-and-i-container">
+        <img src="style/img/Debbie and I.jpg" class = "DebbieAndI" alt="Debbie and I">
+        <h3>My lovely wife and I</h3>
+    </div>
+    <div class="grand-canyon-container">
+        <img src="style/img/Grand Canyon.jpg" class = "GrandCanyon" alt="Grand Canyon">
+        <h3>My trip to the Grand Canyon</h3>
     </div>
 </section>
 
 <footer>
-    <h2>Like what you see?</h2>
+    <h3>Like what you see?</h3>
     <nav>
-        <a class="contact"href="contact.html">Contact</a>
+        <a class="contact-me"href="contact.html">Contact Me</a>
     </nav>
 </footer>
-
-
 
 </body>
 </html>

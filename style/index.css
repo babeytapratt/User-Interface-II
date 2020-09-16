@@ -1,3 +1,388 @@
-header{
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+
+html{
+    font-size:62.5%;
+}
+
+section{
+    padding: 2% 0;
+}
+
+
+
+nav{
     display: flex;
+    padding: 4%;
+}
+
+h1{
+    font-size: 6rem;
+    margin: 2% 0 0 5%;
+}
+
+nav a{
+    display: inline-block;
+    width: 9%;
+    height: 5%;
+    border: .2rem solid red;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.75%;
+    margin: 0 1%;
+}
+
+.myInfoContainer{
+    display: flex;
+    flex-direction: row;
+    background-color: skyblue;
+    border-bottom: 2px solid black;
+}
+
+.myPicture img{
+    width: 200rem;
+    padding-left: 4%;
+}
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding: 5% 10% 0 0;
+    margin-left: 10%;
+}
+
+h2{
+   font-size: 4rem;
+}
+
+h3{
+    font-size: 4rem;
+}
+
+.myProjects{
+    width: 25%;
+    height: 10%;
+    border: .2rem solid red;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    margin: 5% 0;
+    padding: 1.5%;
+}
+
+.textContainer p{
+    font-size: 2.5rem;
+    padding: 0 30% 0 0;
+}
+#projects{
+    display: inline-flex;
+}
+
+.yosemite-park-container{
+    margin: 0 1% 4% 1%;
+    text-align: center;
+}
+
+.yosemite-park-container img{
+    width: 60rem;
+    height: 75%
+}
+.yosemite-park-container h3{
+    font-size: 3rem;
+    color: goldenrod;
+    padding-top: 1%;
+}
+
+.sweet-eats-bakery-container{
+    margin: 0 1% 4% 1%;
+    text-align: center;
+}
+
+.sweet-eats-bakery-container img{
+    width: 60rem;
+    height: 75%;
+}
+.sweet-eats-bakery-container h3{
+    font-size: 3rem;
+    color: goldenrod;
+    padding-top: 1%;
+}
+
+.learning-how-to-code-container{
+    margin: 0 1% 4% 1%;
+    text-align: center;
+}
+
+.learning-how-to-code-container img{
+    width: 60rem;
+    height: 75%;
+}
+.learning-how-to-code-container h3{
+    font-size: 3rem;
+    color: goldenrod;
+    padding-top: 1%;
+}
+
+.flex-box-exercise-container{
+    margin: 0 1% 4% 1%;
+    text-align: center;
+}
+
+.flex-box-exercise-container img{
+    width: 60rem;
+    height: 75%;
+}
+
+.flex-box-exercise-container h3{
+    font-size: 3rem;
+    color: goldenrod;
+    padding-top: 1%;
+}
+
+#funPictures{
+    display: inline-flex;
+}
+
+.meerkat-container{
+    margin: 0 1% 4% 1%;
+    text-align: center;
+}
+
+.meerkat-container img{
+    width: 60rem;
+    height: 60%
+}
+.meerkat-container h3{
+    font-size: 3rem;
+    color: goldenrod;
+    padding-top: 1%;
+}
+
+.cheyenne-mountain-zoo-container{
+    margin: 0 1% 4% 1%;
+    text-align: center;
+}
+
+.cheyenne-mountain-zoo-container img{
+    width: 60rem;
+    height: 60%;
+}
+
+.cheyenne-mountain-zoo-container h3{
+    font-size: 3rem;
+    color: goldenrod;
+    padding-top: 1%;
+}
+
+.debbie-and-i-container{
+    margin: 0 1% 4% 1%;
+    text-align: center;
+}
+
+.debbie-and-i-container img{
+    width: 60rem;
+    height: 60%;
+}
+
+.debbie-and-i-container h3{
+    font-size: 3rem;
+    color: goldenrod;
+    padding-top: 1%;
+}
+
+.grand-canyon-container{
+    margin: 0 1% 4% 1%;
+    text-align: center;
+}
+
+.grand-canyon-container img{
+    width: 60rem;
+    height: 60%;
+}
+
+.grand-canyon-container h3{
+    font-size: 3rem;
+    color: goldenrod;
+    padding-top: 1%;
+}
+
+footer{
+    background-color: skyblue;
+}
+
+footer h3{
+    display: flex;
+    justify-content: center;
+    padding-top: 3%;
+}
+
+footer nav{
+    display: flex;
+    justify-content: center;
+}
+
+footer nav .contact-me{
+    display: inline-block;
+    width: 15%;
+    height: 5%;
+    border: .2rem solid red;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.75%;
+    margin: 0 1%;
+}
+
+@media (max-width: 950px){
+    header nav a{
+        font-size: 1.5rem;
+    }
+    .myProjects{
+        font-size: 1.5rem;
+    }
+    #about .textContainer p{
+        font-size: 2.2rem;
+        padding-right: 10%;
+        padding-bottom: 5%;
+    }
+    .flex-box-exercise-container{
+        display: none;
+    }
+    .grand-canyon-container{
+        display: none;
+    }
+    .yosemite-park-container h3{
+        font-size: 2rem;
+    }
+    .sweet-eats-bakery-container h3{
+        font-size: 2rem;
+    }
+    .learning-how-to-code-container h3{
+        font-size: 2rem;
+    }
+    .meerkat-container h3{
+        font-size: 2rem;
+    }
+    .cheyenne-mountain-zoo-container h3{
+        font-size: 2rem;
+    }
+    .debbie-and-i-container h3{
+        font-size: 2rem;
+    }
+    footer nav .contact-me{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 650px){
+    header h1{
+        display:flex;
+        justify-content: center;
+        font-size: 5rem;
+    }
+    header nav a{
+        font-size: 2rem;
+        width: 100%;
+        margin: 1%;
+    }
+    header nav{
+        flex-direction: column;
+        margin-top: 2.5%;
+        padding: 0 35%;
+    }
+    .myInfoContainer{
+        flex-direction: column;
+        padding-right: 3%;
+        padding-top: 3%;
+    }
+    .textContainer h2{
+        text-align: center;
+        padding: 0 0 0 0;
+    }
+    .myProjects{
+        width:30%;
+        padding: 2%;
+        margin-left: 37%;
+    }
+    #about .textContainer p{
+        font-size: 1.9rem;
+        padding-right: 0;
+    }
+    .yosemite-park-container{
+        display: none;
+    }
+    .meerkat-container{
+        display: none;
+    }
+    footer{
+        padding-top: 10%;
+    }
+    footer h3{
+        padding-bottom: 30%;
+    }
+    footer nav .contact-me{
+        width: 100%;
+        margin-bottom: 35%;
+        padding: 3%;
+        margin-left: 25%;
+        margin-right: 25%;
+        font-size: 3rem;
+
+    }
+
 }
